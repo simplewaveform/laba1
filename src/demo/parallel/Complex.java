@@ -93,4 +93,13 @@ public class Complex {
     public double lengthSQ() {
         return re * re + im * im;
     }
+
+    public Complex minus(Complex other) {
+        return new Complex(this.re - other.re, this.im - other.im);
+    }
+
+    public Complex scale(double scalar) {
+        return new Complex(this.re * scalar, this.im * scalar);
+    }
+
 }
